@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "679297376199",
+    "firebase_url": "https://sistem-bill-warnet-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sistem-bill-warnet",
+    "storage_bucket": "sistem-bill-warnet.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679297376199:android:15c809dd3d2d0c2e2943e2",
+        "android_client_info": {
+          "package_name": "com.example.sistembillwarnet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdtkgcwOVZhrhB176IFyy-4MiyDifodck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

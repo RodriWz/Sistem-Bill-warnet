@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Monitor -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M20,3H4C2.89,3 2,3.89 2,5v11c0,1.11 0.89,2 2,2h3l-1,2v1h12v-1l-1,-2h3c1.11,0 2,-0.89 2,-2V5C22,3.89 21.11,3 20,3zM20,16H4V5h16V16z"/>
+
+    <!-- Screen -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M5,6v9h14V6H5z"/>
+
+    <!-- Keyboard -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M7,18h10v1H7V18z"/>
+
+</vector>

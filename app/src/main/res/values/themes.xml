@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema Cyberpunk -->
+    <style name="Theme.Cyberpunk" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Warna Utama & Sekunder -->
+        <item name="colorPrimary">#DA00EE</item> <!-- Neon Ungu -->
+        <item name="colorPrimaryVariant">#BE00FF</item>
+        <item name="colorOnPrimary">#0d0d1a</item>
+
+        <item name="colorSecondary">#08FFE6</item> <!-- Neon Biru -->
+        <item name="colorOnSecondary">#0d0d1a</item>
+
+        <!-- Latar belakang hitam + gambar neon sebagai background utama -->
+        <item name="android:colorBackground">#FFFDFD</item>
+
+        <!-- Warna lainnya -->
+        <item name="colorSurface">#1A1A1A</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <!-- Warna teks menu toolbar -->
+        <item name="actionMenuTextColor">#00FFFF</item>
+
+        <!-- Gunakan Toolbar style kustom -->
+        <item name="toolbarStyle">@style/CyberpunkToolbar</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="CyberpunkToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">#00FFFF</item> <!-- Judul -->
+        <item name="subtitleTextColor">#FF00FF</item>
+        <item name="android:textColorPrimary">#00FFFF</item> <!-- Menu -->
+        <item name="android:popupTheme">@style/CyberpunkToolbarPopup</item>
+    </style>
+
+    <!-- Popup Menu Style (dropdown) -->
+    <style name="CyberpunkToolbarPopup" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">#00FFFF</item> <!-- Menu popup text -->
+    </style>
+
+</resources>

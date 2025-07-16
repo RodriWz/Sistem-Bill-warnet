@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2"
+    tools:context=".Makanan">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR MENU MAKANAN"
+        android:textColor="#00FFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:shadowColor="#FF00FF"
+        android:shadowRadius="5"
+        android:layout_marginTop="16dp" />
+
+    <!-- Daftar Menu Makanan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
+
+        <!-- Makanan 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Nasi Goreng - Rp15.000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="monospace" />
+
+        <!-- Makanan 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Mie Goreng - Rp12.000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="monospace" />
+
+        <!-- Makanan 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Ayam Crispy - Rp18.000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="monospace" />
+
+        <!-- Makanan 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Indomie + Telur - Rp10.000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="monospace" />
+
+        <!-- Navigasi Icon Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btnFood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_restaurant"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Menu Makanan"
+                app:tint="#FF00FF"
+                android:padding="16dp"/>
+
+            <ImageButton
+                android:id="@+id/btnComputer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_computer"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Menu Paket"
+                app:tint="#FF00FF"
+                android:padding="16dp"/>
+
+            <ImageButton
+                android:id="@+id/btnLogout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_logout"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Logout"
+                app:tint="#FF00FF"
+                android:padding="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

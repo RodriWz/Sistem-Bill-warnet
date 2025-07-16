@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#222222"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="2dp">
+
+    <!-- Nama -->
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama: -"
+        android:textColor="#00FFFF"
+        android:background="#1A1A1A"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Paket -->
+    <TextView
+        android:id="@+id/txtPaket"
+        android:text="Paket: -"
+        android:textColor="#00FFFF"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <!-- Metode -->
+    <TextView
+        android:id="@+id/txtMetode"
+        android:text="Metode: -"
+        android:textColor="#FF00FF"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Makanan -->
+    <TextView
+        android:id="@+id/txtMakanan"
+        android:text="Makanan: -"
+        android:textColor="#FFA500"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Minuman -->
+    <TextView
+        android:id="@+id/txtMinuman"
+        android:text="Minuman: -"
+        android:textColor="#87CEFA"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tombol AKTIFKAN -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAktifkan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AKTIFKAN"
+            android:textColor="#00FFFF"
+            android:backgroundTint="#1A1A1A"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>

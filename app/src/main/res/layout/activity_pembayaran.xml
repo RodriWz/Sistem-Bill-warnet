@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d0d1a">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/titlePembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚡ PEMBAYARAN CYBER ⚡"
+        android:textColor="#00FFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Input Nama -->
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Pengguna"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:backgroundTint="#FF00FF"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/titlePembayaran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Spinner Paket -->
+    <Spinner
+        android:id="@+id/spinnerPaket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFF"
+        android:popupBackground="#1A1A2E"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/inputNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Spinner Metode Pembayaran -->
+    <Spinner
+        android:id="@+id/spinnerMetode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF00FF"
+        android:popupBackground="#1A1A2E"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPaket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Spinner Makanan -->
+    <Spinner
+        android:id="@+id/spinnerMakanan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFF"
+        android:popupBackground="#1A1A2E"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMetode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Spinner Minuman -->
+    <Spinner
+        android:id="@+id/spinnerMinuman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF00FF"
+        android:popupBackground="#1A1A2E"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMakanan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Konfirmasi -->
+    <Button
+        android:id="@+id/btnKonfirmasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="KONFIRMASI 🔒"
+        android:textColor="#0FF0FC"
+        android:backgroundTint="#1A1A2E"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMinuman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Countdown Timer -->
+    <TextView
+        android:id="@+id/countdownTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#FF00FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnKonfirmasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <!-- Ringkasan -->
+    <TextView
+        android:id="@+id/summaryInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🧾 Ringkasan: Belum dipilih"
+        android:textColor="#FF00FF"
+        android:background="#1A1A2E"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/footerNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Footer -->
+    <TextView
+        android:id="@+id/footerNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Cybernet Systems"
+        android:textColor="#00FFFF"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#111111"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
