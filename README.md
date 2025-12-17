@@ -60,25 +60,6 @@ Cek ini:
 
 ---
 
-## 🔹 Cara Paste ke GitHub
-
-### Lewat Website GitHub
-1. Masuk ke repo
-2. Klik `README.md`
-3. Klik ikon ✏️ **Edit**
-4. Paste teks Markdown
-5. Klik **Commit changes**
-
-### Lewat Laptop / IDE
-1. Paste ke file `README.md`
-2. Save
-3. Commit:
-```bash
-git add README.md
-git commit -m "Menambahkan cara menjalankan program"
-git push
-
-
 ## Struktur Project
 ```text
 Sistem-Bill-warnet/
